@@ -1,0 +1,70 @@
+#path
+data_raw : A:/projectwater/data/raw/water_potability.csv
+data_final: A:/projectwater/data/process/ori_new.pkl
+path_train:
+- A:/projectwater/data/process/x_train.pkl
+- A:/projectwater/data/process/y_train.pkl
+path_valid:
+- A:/projectwater/data/process/x_valid.pkl
+- A:/projectwater/data/process/y_valid.pkl
+path_test:
+- A:/projectwater/data/process/x_test.pkl
+- A:/projectwater/data/process/y_test.pkl
+path_train_feat:
+- A:/projectwater/data/process/x_train_feat.pkl
+- A:/projectwater/data/process/y_train_feat.pkl
+path_valid_feat:
+- A:/projectwater/data/process/x_valid_feat.pkl
+- A:/projectwater/data/process/y_valid_feat.pkl
+path_test_feat:
+- A:/projectwater/data/process/x_test_feat.pkl
+- A:/projectwater/data/process/y_test_feat.pkl
+final_model_path: A:/projectwater/models/production_model.pkl
+training_log_path: A:/projectwater/log/training_log.json
+
+#Nama Kolom
+new_cols:
+- ph
+- hardness
+- solids
+- chloramines
+- sulfate
+- conductivity
+- organic_carbon
+- trihalomethes 
+- turbidity
+- potability
+
+#int_columns
+int_columns:
+- potability
+# FLOAT
+float_columns:
+- ph
+- hardness
+- solids
+- chloramines
+- sulfate
+- conductivity
+- organic_carbon
+- trihalomethes 
+- turbidity  
+
+
+
+#predictor dan target
+target: potability
+predictors:
+- ph
+- hardness
+- solids
+- chloramines
+- sulfate
+- conductivity
+- organic_carbon
+- trihalomethes 
+- turbidity
+
+#ratio_split
+test_size: 0.2
+valid_size: 0.5
